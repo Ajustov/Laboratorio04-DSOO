@@ -3,7 +3,7 @@ public class SistemaBiblioteca {
     private ArrayList<Libro> libros;
     private ArrayList<Usuario> usuarios;
   
-    // Constructor
+    // ConstructorHBJBJH
     public SistemaBiblioteca() {
         libros = new ArrayList<>();
         usuarios = new ArrayList<>();
