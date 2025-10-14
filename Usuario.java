@@ -4,12 +4,20 @@ public class Usuario {
     public Usuario(String nombre, String dni){
         this.nombre=nombre;
         this.dni=dni;
+        
     }
     public String getNombre(){
         return nombre;
     }
     public String getDni(){
         return dni;
+    }
+    
+    //Creacion de setters
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    		
     }
     @Override
     public String toString() {
