@@ -3,11 +3,13 @@ public class SistemaBiblioteca {
     private ArrayList<Libro> libros;
     private ArrayList<Usuario> usuarios;
   
-    // ConstructorHBJBJH
+    // Constructor
     public SistemaBiblioteca() {
         libros = new ArrayList<>();
         usuarios = new ArrayList<>();
     }
+    
+    //Metodo registrar libro e impresión del Titulo de la unidad
     public void registrarLibro(Libro libro) {
         libros.add(libro);
         System.out.println("Libro registrado: " + libro.getTitulo());
