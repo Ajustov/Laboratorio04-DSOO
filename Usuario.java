@@ -1,6 +1,7 @@
 public class Usuario {
     private String nombre;
     private int dni;  //Mejora de variable
+    private Libro libroPrestado;
     
     public Usuario(String nombre, int dni) {
 
@@ -27,6 +28,16 @@ public class Usuario {
     public int getDni()	{
     		return dni;
 		
-}
+    }
+    
+    public void mostrarEstadoPrestamo() {
+        System.out.println("\n--- Estado de préstamo del usuario ---");
+        System.out.println("Usuario: " + nombre + " (DNI: " + dni + ")");
+        if (libroPrestado != null) {
+            System.out.println("Tiene en préstamo: " + libroPrestado.getTitulo());
+        } else {
+            System.out.println("No tiene ningún libro en préstamo actualmente.");
+        }
+    }
 }   
   
