@@ -21,6 +21,7 @@ public class App {
         int opcion = -1;
         do {
             System.out.println("\n===== SISTEMA DE BIBLIOTECA =====");
+
             System.out.println("1. Registrar Usuario");
             System.out.println("2. Registrar Libro");
             System.out.println("3. Prestar Libro");
@@ -104,6 +105,16 @@ public class App {
                         break;
                     }
                     sistema.devolverLibro(sistema.getUsuarios().get(idxUsuarioD), sistema.getLibros().get(idxLibroD));
+                    break;
+                 
+                case 5:
+                    System.out.println("...Libros registrados:");
+                    sistema.mostrarLibros();
+                    break;
+                    
+                case 6:
+                	System.out.println("...Usuarios registrados:");
+                    sistema.mostrarUsuarios();
                     break;
 
                 case 0:
