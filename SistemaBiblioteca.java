@@ -26,6 +26,7 @@ public class SistemaBiblioteca {
         System.out.println("\n--- Lista de Libros ---");
         for (Libro libro : libros) {
             System.out.println(libro);
+            System.out.println("\\\\\\\\\\\\\\\\\\");
         }
     }
 
@@ -68,4 +69,6 @@ public class SistemaBiblioteca {
     public ArrayList<Usuario> getUsuarios() {
         return usuarios;
     }
+    
+    
 }
