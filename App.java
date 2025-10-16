@@ -4,9 +4,9 @@ public class App {
         Scanner sc=new Scanner(System.in);
         SistemaBiblioteca sistema = new SistemaBiblioteca();
         //Inicializar usuarios
-        Usuario usuario1 = new Usuario("Jose", "U001");
-        Usuario usuario2 = new Usuario("Ana", "U002");
-        Usuario usuario3 = new Usuario("Luis", "U003");
+        Usuario usuario1 = new Usuario("Jose", 12345678);
+        Usuario usuario2 = new Usuario("Ana", 12345656);
+        Usuario usuario3 = new Usuario("Luis", 12356321);
         
         sistema.registrarUsuario(usuario1);
         sistema.registrarUsuario(usuario2);
@@ -34,9 +34,9 @@ public class App {
                 case 1: // Registrar usuario
                     System.out.print("Ingrese nombre del usuario: ");
                     String nombre = sc.nextLine();
-                    System.out.print("Ingrese ID del usuario: ");
-                    String id = sc.nextLine();
-                    sistema.registrarUsuario(new Usuario(nombre, id));
+                    System.out.print("Ingrese DNI del usuario: ");
+                    int dni = sc.nextInt();
+                    sistema.registrarUsuario(new Usuario(nombre, dni));
                     break;
                 case 2: // Registrar libro
                     System.out.print("Ingrese titulo del libro: ");
