@@ -29,6 +29,15 @@ public class Usuario {
     		return dni;
 		
     }
+
+    public Libro getLibroPrestado() {
+        return libroPrestado;
+    }
+
+    public void setLibroPrestado(Libro libroPrestado) {
+        this.libroPrestado = libroPrestado;
+    }
+
     
     public void mostrarEstadoPrestamo() {
         System.out.println("\n--- Estado de préstamo del usuario ---");
