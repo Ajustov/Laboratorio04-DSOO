@@ -11,9 +11,9 @@ public class App {
         sistema.registrarUsuario(usuario2);
         sistema.registrarUsuario(usuario3);
 
-        Libro libro1 = new Libro("Cien Anios de Soledad", "Gabriel García Marquez", "123456");
-        Libro libro2 = new Libro("Don Quijote", "Miguel de Cervantes", "654321");
-        Libro libro3 = new Libro("La Ciudad y los Perros", "Mario Vargas Llosa", "111222");
+        Libro libro1 = new Libro("1.Cien Anios de Soledad", "Gabriel García Marquez", "123456");
+        Libro libro2 = new Libro("2.Don Quijote", "Miguel de Cervantes", "654321");
+        Libro libro3 = new Libro("3.La Ciudad y los Perros", "Mario Vargas Llosa", "111222");
         sistema.registrarLibro(libro1);
         sistema.registrarLibro(libro2);
         sistema.registrarLibro(libro3);
