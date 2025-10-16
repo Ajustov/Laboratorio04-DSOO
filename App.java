@@ -25,6 +25,8 @@ public class App {
             System.out.println("2. Registrar Libro");
             System.out.println("3. Prestar Libro");
             System.out.println("4. Devolver Libro");
+            System.out.println("5. Mostrar todos los libros registrados");
+            System.out.println("5. Mostrar todos los usuarios registrados");
             System.out.println("0. Salir");
             System.out.print("Seleccione una opcion: ");
 
