@@ -54,6 +54,7 @@ public class SistemaBiblioteca {
     public void devolverLibro(Usuario usuario, Libro libro) {
         if (!libro.estaDisponible()) {
             libro.setDisponible(true);
+            usuario.setLibroPrestado(null); 
             System.out.println("El usuario " + usuario.getNombre() +
                     " ha devuelto: " + libro.getTitulo());
         } else {
