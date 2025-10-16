@@ -14,9 +14,19 @@ public class Usuario {
        
     }
     
+    public String getNombre() {
+    		return nombre;
+    }
+    
+    
     public void setDni(int dni) {
         this.dni=dni;
        
     }
+    
+    public int getDni()	{
+    		return dni;
+		
+}
 }   
   
