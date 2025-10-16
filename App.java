@@ -28,6 +28,7 @@ public class App {
             System.out.println("4. Devolver Libro");
             System.out.println("5. Mostrar todos los libros registrados");
             System.out.println("6. Mostrar todos los usuarios registrados");
+            System.out.println("7. Usuario con préstamo:");
             System.out.println("0. Salir");
             System.out.print("Seleccione una opcion: ");
 
@@ -116,7 +117,21 @@ public class App {
                 	System.out.println("...Usuarios registrados:");
                     sistema.mostrarUsuarios();
                     break;
-
+                    
+                case 7:
+                		System.out.println("======================== Usuario con préstamo:");
+                    sistema.mostrarUsuarios();
+                    System.out.println("Seleccione índice de usuario para ver su estado de préstamo: ");
+                    int idxUsuarioEstado;
+                    try {
+                        idxUsuarioEstado = Integer.parseInt(sc.nextLine()) - 1;
+                    } catch (NumberFormatException e) {
+                        System.out.println("Entrada inválida.");
+                        break;
+                    }
+                    sistema.getUsuarios().get(idxUsuarioEstado).mostrarEstadoPrestamo();
+                    System.out.println("\n"+"\n"+"\n"+"\n");
+                    break;
                 case 0:
                     System.out.println("Saliendo del sistema...");
                     break;
