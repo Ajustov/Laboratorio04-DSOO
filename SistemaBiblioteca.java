@@ -42,6 +42,7 @@ public class SistemaBiblioteca {
     public void prestarLibro(Usuario usuario, Libro libro) {
         if (libro.estaDisponible()) {
             libro.setDisponible(false);
+            usuario.setLibroPrestado(libro);
             System.out.println("El usuario " + usuario.getNombre() +
                     " ha tomado prestado: " + libro.getTitulo());
         } else {
