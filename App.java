@@ -108,7 +108,7 @@ public class App {
                     break;
                  
                 case 5:
-                    System.out.println("...Libros registrados:");
+                    System.out.println("...Libros registrados y su disponibilidad:");
                     sistema.mostrarLibros();
                     break;
                     
